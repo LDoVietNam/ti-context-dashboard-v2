@@ -66,12 +66,12 @@ async function rebuildAndDeploy() {
         await git.add('.');
         await git.commit('Auto-sync: Update context files');
 
-        // 5. Push to gh-pages with token (force)
+        // 5. Push to main with token (force)
         console.log('🚀 Pushing to GitHub...');
-        await git.push(REPO_URL, 'gh-pages', ['--force']);
+        await git.push(REPO_URL, 'main', ['--force']);
 
         console.log('✅ Deployed successfully!');
-        console.log('🌐 URL: https://ldovietnam.github.io/ti-context-dashboard/\n');
+        console.log('🌐 URL: https://ldovietnam.github.io/ti-context-dashboard-v2/\n');
 
     } catch (error) {
         console.error('❌ Error during rebuild/deploy:', error.message);
