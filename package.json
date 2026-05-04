@@ -1,0 +1,14 @@
+{
+  "name": "ti-context-dashboard",
+  "version": "1.0.0",
+  "description": "Ti Context Files Dashboard with Auto-Sync",
+  "scripts": {
+    "build": "node build-static.js",
+    "sync": "node auto-sync.js",
+    "serve": "npx http-server dist -p 3001"
+  },
+  "dependencies": {
+    "chokidar": "^5.0.0",
+    "simple-git": "^3.36.0"
+  }
+}
